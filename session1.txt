@@ -1,0 +1,104 @@
+	******SCHOOLING SYSTEM INFORMATION******	
+
+package session1;
+import java.util.*;
+public class schoolSystem {
+
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+                System.out.println(" ****** Schooling Information System ****** ");
+		System.out.print("Enter First Name: ");	
+		String firstName=sc.next();
+		System.out.print("Enter Last Name: ");
+		String lastName=sc.next();
+		System.out.print("Enter Father Name: ");
+		String fatherName=sc.next();
+		System.out.print("Enter Class Name: ");
+		String className=sc.next();
+		System.out.print("Enter Student Id: ");
+                int studentId=sc.nextInt();
+                System.out.println("Enter Student Marks");
+		    int arr[]=new int[5];
+                        for(int i=0; i<arr.length; i++){
+                            System.out.print("-Marks of subject"+(i+1)+" = ");
+                            arr[i]=sc.nextInt();
+                        }   
+                    int totalMarks=arr[0]+arr[1]+arr[2]+arr[3]+arr[4];
+                    int avg=totalMarks/5;
+                
+                System.out.println();
+                System.out.println("        ****** Information ****** ");
+                System.out.println();
+                    System.out.println("Name= "+firstName+lastName+"\nFather Name= "+fatherName+"\nClass Name= "+className+"\nStudent ID= "+studentId+"\nTotal Marks out of 500= "+totalMarks+"\nAverage= "+avg);
+
+	}
+}
+---------------------------------------------------------------------
+
+
+	******HOSPITAL INFORMATION SYSTEM******
+
+
+
+
+package session1;
+import java.util.Scanner;
+public class hospitalSystem {
+
+		String patientName;
+        int mr_number;
+        String fatherName;
+        String wardName;
+        int age;
+        int bedNum;
+            void set (String patientName, String fatherName,int age, String wd, int bedno){
+                this.patientName=patientName;
+                this.fatherName=fatherName;
+                this.age=age;
+                wardName=wd;
+                bedNum=bedno;
+                }
+            void display(){
+                System.out.println("Patient Name: "+patientName+"\nFather Name: "+fatherName+"\nAge: "+age+"\nWard Name: "+wardName+"\nBed Number: "+bedNum);
+            }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+            hospitalSystem H=new hospitalSystem();
+            System.out.println("*****Hospital System Information System*****");
+                System.out.print("\nEnter Mr# ");
+                H.mr_number=sc.nextInt();
+                H.set("Uzair Sikandar","Sikandar Mirza",20,"Semi-Private",3);
+                H.display();
+}
+}
+---------------------------------------------------------------------
+
+
+
+	****** INQUIRY INFORMATION SYSTEM ******
+
+
+package session1;
+import java.util.*;
+public class inquirySystem {
+	public static void main(String[] args) {
+		        Scanner sc=new Scanner(System.in);
+		        System.out.println("*** Inquiry System ***");
+		        System.out.print("Enter Token number: ");
+		        int token_no=sc.nextInt();
+		        System.out.print("Enter Seat number: ");
+		        int seat_no=sc.nextInt();
+		        System.out.print("Enter table number: ");
+		        int table_no=sc.nextInt();
+		        System.out.print("Enter receive number: ");
+		        int receive_no=sc.nextInt();
+		                System.out.println("\n**** Inquiry System Information *****\n");
+		            System.out.println("Token number: "+token_no);
+		            System.out.println("Seat number: "+seat_no);
+		            System.out.println("Table number: "+table_no);
+		            System.out.println("Receive number: "+receive_no);
+		            
+		    }
+		    
+		}

@@ -1,0 +1,88 @@
+	----------School Management System ----------
+
+
+package session2;
+import java.util.Scanner;
+public class schoolManagement {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	                
+	                System.out.println(" ****** School Management System ******\n ");
+	                System.out.println("1. Student Information. ");
+	                System.out.println("2. Fees Structure.");
+	                System.out.println("3. Marks Obtain Part.");
+	                System.out.print("\nEnter Menue: ");
+	                int module=sc.nextInt();
+	                boolean h = false;
+	                
+	                    switch(module){
+	                        case 1:
+	                            System.out.println("\n      --Student Information-- \n");
+	                            System.out.print("Enter Name: ");
+	                            String name=sc.next();
+	                            System.out.print("Enter Roll No.: ");
+	                            int roll=sc.nextInt();
+	                            System.out.println("Father Name: AQiq ur Rehman. ");
+	                            System.out.println("Class: 9 ");
+	                            System.out.println("Last Class: 8 ");
+	                            System.out.println("Last Passing Marks: 450 Out of 500.");
+	                        case 2:
+	                            System.out.println("\n      --Fees Structure-- \n");
+	                            System.out.println("Admission Fees: Payed");
+	                            System.out.println("Extracirculum Fees: Payed");
+	                            System.out.println("Game Fees: Payed");
+	                            System.out.print("Monthly Fees: ");     //Monthly Fees= 4000.
+	                            int mfees=sc.nextInt();
+	                                if(mfees == 4000){
+	                                    h=true;
+	                                    System.out.println("Payed");
+	                                }else{
+	                                    h=false;
+	                                    System.out.println("\nFees is not Pay! Thats why Result can't be shown");
+	                                }
+	                        
+	                        case 3:
+	                            System.out.println("      --Marks Obtain Part-- \n");
+	                            if(h){
+	                                
+	                                
+	                                System.out.println("marks of Subjects");
+	                                System.out.println("Insert all the Marks out of 100\n");
+	                                System.out.print("Enter Physics Marks: ");
+	                                int phy=sc.nextInt();
+	                                if(phy > 39){
+	                                    System.out.println("Pass");
+	                                }else{System.out.println("Fail");}
+	                                
+	                                System.out.print("Enter Chemistry Marks: ");
+	                                int che=sc.nextInt();
+	                                if(che > 39){
+	                                    System.out.println("Pass");
+	                                }else{System.out.println("Fail");}
+	                                
+	                                System.out.print("Enter Maths Marks: ");
+	                                int mth=sc.nextInt();
+	                                if(mth > 39){
+	                                    System.out.println("Pass");
+	                                }else{System.out.println("Fail");}
+	                                
+	                                System.out.print("Enter English Marks: ");
+	                                int eng=sc.nextInt();
+	                                if(eng > 39){
+	                                    System.out.println("Pass");
+	                                }else{System.out.println("Fail");}
+	                                
+	                                System.out.print("Enter Urdu Marks: ");
+	                                int urdu=sc.nextInt();
+	                                if(urdu > 39){
+	                                    System.out.println("Pass");
+	                                }else{System.out.println("Fail");}
+	                            
+	                            }else{
+	                                System.out.println("----\n");
+	                            }
+	                    }
+	}
+
+}
+----------------------------------------------------------------------
